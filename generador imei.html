@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Generador de IMEI</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Generador de IMEI</h1>
+
+      <div class="form-group">
+        <label for="brand">Marca:</label>
+        <select id="brand" name="brand">
+          <option value="Samsung">Samsung</option>
+          <option value="Xiaomi">Xiaomi</option>
+          <option value="Motorola">Motorola</option>
+          <option value="Infinix">Infinix</option>
+          <option value="Tecno">Tecno</option>
+          <option value="LG">LG</option>
+          <option value="Huawei">Huawei</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="imei">IMEI:</label>
+        <div class="input-group">
+          <input type="text" id="imei" readonly>
+          <button id="copy" class="btn-copy" disabled>Copiar</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button id="generate" class="btn-generate">Generar IMEI</button>
+      </div>
+    </div>
+	<div class="footer-container">
+<p class="texto">Número de visitas: 172629</p>
+</div>
+    <script src="app.js"></script>
+  </body>
+</html>
